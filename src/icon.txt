@@ -1,0 +1,2 @@
+;トレイアイコンの変更
+Menu, Tray, Icon, ./src\icon_160672_256.png

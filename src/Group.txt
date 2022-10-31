@@ -1,0 +1,6 @@
+;ブラウザのグループ作成(Opera = Chorome_WindgetWin_1)
+GroupAdd Browser, ahk_class Chrome_WidgetWin_1
+GroupAdd Browser, ahk_class MozillaWindowClass
+
+;指定したブラウザのみで動作
+#ifWinActive ahk_group Browser

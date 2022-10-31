@@ -1,0 +1,30 @@
+;Expand button_MouseSettings
+;({拡張ボタン2(上)}) 右にスクロール
+XButton2::
+	if(GetKeyState("XButton1","P")){
+		return
+	}
+	Loop{
+		if(!GetKeyState("XButton2","P")){
+			break
+		}
+		send,{ShiftDown}{WheelUP}
+		send,{ShiftUP}
+		sleep,100
+	}	
+return
+
+;({拡張ボタン1(下)}) 左にスクロール
+XButton1::
+	if(GetKeyState("XButton2","P")){
+		return
+	}
+	Loop{
+		if(!GetKeyState("XButton1","P")){
+			break
+		}
+		send,{ShiftDown}{WheelDown}
+		send,{ShiftUP}
+		sleep,100
+	}
+return
